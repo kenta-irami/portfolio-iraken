@@ -16,6 +16,8 @@ const techStacks: TechItem[] = [
     { name: 'LINE API', icon: '💬', color: 'bg-[#06C755] text-white' },
     { name: 'Supabase', icon: '⚡', color: 'bg-[#3ecf8e] text-black' },
     { name: 'Firebase', icon: '🔥', color: 'bg-[#ffca28] text-black' },
+    { name: 'AWS', icon: '☁️', color: 'bg-[#FF9900] text-white' },
+    { name: 'GCP', icon: '☁️', color: 'bg-[#4285F4] text-white' },
     { name: 'OpenAI API', icon: '🤖', color: 'bg-[#10a37f] text-white' },
     { name: 'Gemini API', icon: '✨', color: 'bg-gradient-to-r from-[#4285f4] to-[#ea4335] text-white' },
     { name: 'Slack API', icon: '💬', color: 'bg-[#4a154b] text-white' },
