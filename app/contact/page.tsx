@@ -1,7 +1,7 @@
 export default function ContactPage() {
   return (
     <div className="mx-auto max-w-2xl">
-      <h1 className="text-3xl font-semibold mb-8 !mt-0">お問い合わせ</h1>
+      <h1 className="text-2xl font-semibold mb-8 !mt-0">お問い合わせ</h1>
 
       <p className="mb-4">
         お問い合わせは以下のフォームからお気軽にお送りください。

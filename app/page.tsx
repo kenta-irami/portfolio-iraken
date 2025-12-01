@@ -23,6 +23,7 @@ export default function Page() {
       </p>
 
       <div className="my-8">
+        <h2 className="font-semibold text-xl mb-4 tracking-tight">プロジェクト</h2>
         <BlogPosts />
       </div>
     </section>

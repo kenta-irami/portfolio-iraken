@@ -1,10 +1,12 @@
+import { TechStack } from "app/components/tech-stack";
+
 export default function ProfilePage() {
   return (
     <div className="mx-auto max-w-2xl">
-      <h1 className="text-3xl font-semibold mb-8 !mt-0">プロフィール</h1>
+      <h1 className="text-2xl font-semibold mb-8 !mt-0">プロフィール</h1>
 
       <h2 className="text-xl font-semibold mb-4">
-        伊良皆 健太（Kenta Iraken）
+        伊良皆 健太（Kenta Iramina）
       </h2>
       <p className="mb-4">
         Web制作・Web開発フリーランス。
@@ -21,13 +23,7 @@ export default function ProfilePage() {
       </ul>
 
       <h2 className="text-xl font-semibold mb-4 mt-8">技術スタック</h2>
-      <ul className="list-disc pl-6 mb-4">
-        <li>Next.js / TypeScript / React</li>
-        <li>Google Apps Script / Google Sheets / Workspace API</li>
-        <li>Supabase / Firebase</li>
-        <li>OpenAI API / Gemini API / embeddings</li>
-        <li>Slack API / Notion API / Webhook連携</li>
-      </ul>
+      <TechStack />
 
       <h2 className="text-xl font-semibold mb-4 mt-8">
         ミッション / 大切にしていること

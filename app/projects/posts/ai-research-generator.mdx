@@ -1,10 +1,14 @@
 ---
 title: "AI Research Idea Generator（個人開発）"
-publishedAt: "2025-12-1"
+publishedAt: "2025-12-01"
 summary: "研究テーマから関連文献を調査し、新規性のある研究アイデアを自動生成する個人開発プロジェクトの紹介です。"
 ---
 
+import { ProjectTechBadges } from 'app/components/project-tech-badges';
+
 # AI Research Idea Generator（個人開発）
+
+![AI Research Idea Generator](/projects/posts/ai-research-generator.png)
 
 このプロジェクトは、ユーザーが入力した研究テーマに対して
 
@@ -13,7 +17,7 @@ summary: "研究テーマから関連文献を調査し、新規性のある研�
 - 新規性の分析
 - 実現可能性の高い研究アイデアの生成
 
-を行う **“AI 研究サポートツール”** の個人開発プロジェクトです。
+を行う **"AI 研究サポートツール"** の個人開発プロジェクトです。
 
 ---
 
@@ -53,11 +57,7 @@ Semantic Scholar API を使って
 
 ## 使っている技術
 
-- **Python / FastAPI**
-- **Semantic Scholar API**
-- **OpenAI GPT-4o / Gemini API**
-- **Pydantic によるスキーマ管理**
-- **マルチエージェント構造（Generator / Searcher / Reviewer）**
+<ProjectTechBadges techs={['Python', 'FastAPI', 'Semantic Scholar API', 'OpenAI GPT-4o', 'Gemini API', 'Pydantic']} />
 
 技術面でも、「AI × 検索 × 自動化」の強みが伝わるよう構成しています。
 
