@@ -1,18 +1,27 @@
+// app/page.tsx
 import { BlogPosts } from 'app/components/posts'
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        小さな会社のための
+        <br className="hidden sm:block" />
+        Webサイト制作と、ちょっとした業務自動化。
       </h1>
+
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        Web制作・Web開発フリーランスの伊良皆 健太です。
+        LP / コーポレートサイト制作（ノーコード〜Next.js）を中心に、
+        問い合わせフォームの設置や、スプレッドシート連携・Slack通知などの
+        「小さな仕組み化」までまとめてお手伝いしています。
       </p>
+
+      <p className="mb-4">
+        ITが得意ではない方とも、できるだけ専門用語を減らして、
+        いまの課題を一緒に整理しながら進めていくスタイルです。
+      </p>
+
       <div className="my-8">
         <BlogPosts />
       </div>

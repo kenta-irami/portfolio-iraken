@@ -1,3 +1,4 @@
+// app/layout.tsx
 import './global.css'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
@@ -11,16 +12,18 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: '伊良皆 健太 | Web制作・Web開発フリーランス',
+    template: '%s | 伊良皆 健太',
   },
-  description: 'This is my portfolio.',
+  description:
+    '小さな会社のための Web サイト制作と、問い合わせフォーム・スプレッドシート連携などのミニ自動化を行うフリーランスエンジニアのポートフォリオサイトです。',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: '伊良皆 健太 | Web制作・Web開発フリーランス',
+    description:
+      '小さな会社のための Web サイト制作と、問い合わせフォーム・スプレッドシート連携などのミニ自動化を行うフリーランスエンジニアのポートフォリオサイトです。',
     url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
+    siteName: '伊良皆 健太 ポートフォリオ',
+    locale: 'ja_JP',
     type: 'website',
   },
   robots: {
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
   },
 }
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
+const cx = (...classes: string[]) => classes.filter(Boolean).join(' ')
 
 export default function RootLayout({
   children,
@@ -45,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="ja" // ← ここだけ en → ja に変更
       className={cx(
         'text-black bg-white dark:text-white dark:bg-black',
         GeistSans.variable,
