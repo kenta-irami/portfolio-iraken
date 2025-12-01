@@ -5,11 +5,12 @@ const navItems = {
     name: 'ホーム',
   },
   '/blog': {
-    name: 'ブログ',
+    name: 'プロジェクト',
   },
-  'https://vercel.com/templates/next.js/portfolio-starter-kit': {
+  '/profile': {
     name: 'プロフィール',
   },
+  '/contact': { name: 'お問い合わせ' }
 }
 
 export function Navbar() {

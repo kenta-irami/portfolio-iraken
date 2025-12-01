@@ -1,52 +1,52 @@
 ---
-title: 'The Power of Static Typing in Programming'
-publishedAt: '2024-04-07'
-summary: 'In the ever-evolving landscape of software development, the debate between dynamic and static typing continues to be a hot topic.'
+title: '問い合わせフォーム → スプレッドシート → Slack通知のミニ自動化'
+publishedAt: '2025-12-01'
+summary: 'フォーム送信内容を自動で管理し、Slack通知まで行う小さな自動化フローの実例です。'
 ---
 
-In the ever-evolving landscape of software development, the debate between dynamic and static typing continues to be a hot topic. While dynamic typing offers flexibility and rapid development, static typing brings its own set of powerful advantages that can significantly improve the quality and maintainability of code. In this post, we'll explore why static typing is crucial for developers, accompanied by practical examples through markdown code snippets.
+# 問い合わせフォーム → スプレッドシート → Slack通知のミニ自動化
 
-## Improved Code Quality and Safety
+このプロジェクトでは、Webサイトの問い合わせフォームから送信された内容を
 
-One of the most compelling reasons to use static typing is the improvement it brings to code quality and safety. By enforcing type checks at compile time, static typing catches errors early in the development process, reducing the chances of runtime errors.
+1. 自動で Google スプレッドシートに保存  
+2. 担当者の Slack にリアルタイム通知  
 
-```ts
-function greet(name: string): string {
-  return `Hello, ${name}!`
-}
+する仕組みを実装しました。
 
-// This will throw an error at compile time, preventing potential runtime issues.
-let message: string = greet(123)
-```
+---
 
-## Enhanced Readability and Maintainability
+## 背景
 
-Static typing makes code more readable and maintainable. By explicitly declaring types, developers provide a clear contract of what the code does, making it easier for others (or themselves in the future) to understand and modify the codebase.
+- 問い合わせメールに気づくのが遅れがち  
+- スプレッドシートに転記する作業が手間  
+- 問い合わせ内容が蓄積されず振り返れない  
 
-## Facilitates Tooling and Refactoring
+という課題から、「まずはここをラクにしたい」という相談を受けました。
 
-Modern IDEs leverage static typing to offer advanced features like code completion, refactoring, and static analysis. These tools can automatically detect issues, suggest fixes, and safely refactor code, enhancing developer productivity and reducing the likelihood of introducing bugs during refactoring.
+---
 
-```csharp
-// Refactoring example: Renaming a method in C#
-public class Calculator {
-    public int Add(int a, int b) {
-        return a + b;
-    }
-}
+## 実装したこと
 
-// After refactoring `Add` to `Sum`, all references are automatically updated.
-public class Calculator {
-    public int Sum(int a, int b) {
-        return a + b;
-    }
-}
-```
+- フォーム送信データの受け取り（Next.js / Webhook）  
+- Google スプレッドシートへの自動保存（GAS）  
+- Slack Webhook での通知  
+- 担当者が確認しやすいレイアウトに整形  
 
-## Performance Optimizations
+---
 
-Static typing can lead to better performance. Since types are known at compile time, compilers can optimize the generated code more effectively. This can result in faster execution times and lower resource consumption.
+## 効果
 
-## Conclusion
+- 問い合わせを **リアルタイムに把握**できるようになった  
+- 情報がスプレッドシートに自動蓄積され、**後から分析**しやすくなった  
+- 対応漏れが減り、顧客対応の質が向上  
 
-Static typing offers numerous benefits that contribute to the development of robust, efficient, and maintainable software. By catching errors early, enhancing readability, facilitating tooling, and enabling optimizations, static typing is an invaluable asset for developers. As the software industry continues to mature, the importance of static typing in ensuring code quality and performance cannot be overstated. Whether you're working on a large-scale enterprise application or a small project, embracing static typing can lead to better software development outcomes.
+---
+
+## こんな方におすすめ
+
+- 手作業の問い合わせ管理を減らしたい  
+- 複数人で問い合わせを共有したい  
+- 小さな一歩から業務改善を進めていきたい  
+
+「問い合わせが来たらどう通知する？」などの運用面も含めて、  
+一緒に小さな仕組み化から作っていきます。

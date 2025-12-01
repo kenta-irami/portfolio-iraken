@@ -1,31 +1,86 @@
 ---
-title: 'Spaces vs. Tabs: The Indentation Debate Continues'
-publishedAt: '2024-04-08'
-summary: 'Explore the enduring debate between using spaces and tabs for code indentation, and why this choice matters more than you might think.'
+title: "AI Research Idea Generator（個人開発）"
+publishedAt: "2025-12-1"
+summary: "研究テーマから関連文献を調査し、新規性のある研究アイデアを自動生成する個人開発プロジェクトの紹介です。"
 ---
 
-The debate between using spaces and tabs for indentation in coding may seem trivial to the uninitiated, but it is a topic that continues to inspire passionate discussions among developers. This seemingly minor choice can affect code readability, maintenance, and even team dynamics.
+# AI Research Idea Generator（個人開発）
 
-Let's delve into the arguments for both sides and consider why this debate remains relevant in the software development world.
+このプロジェクトは、ユーザーが入力した研究テーマに対して
 
-## The Case for Spaces
+- 関連論文の自動検索
+- 重要ポイントの抽出・要約
+- 新規性の分析
+- 実現可能性の高い研究アイデアの生成
 
-Advocates for using spaces argue that it ensures consistent code appearance across different editors, tools, and platforms. Because a space is a universally recognized character with a consistent width, code indented with spaces will look the same no matter where it's viewed. This consistency is crucial for maintaining readability and avoiding formatting issues when code is shared between team members or published online.
+を行う **“AI 研究サポートツール”** の個人開発プロジェクトです。
 
-Additionally, some programming languages and style guides explicitly recommend spaces for indentation, suggesting a certain number of spaces (often two or four) per indentation level. Adhering to these recommendations can be essential for projects that aim for best practices in code quality and readability.
+---
 
-## The Case for Tabs
+## 背景
 
-On the other side of the debate, proponents of tabs highlight the flexibility that tabs offer. Because the width of a tab can be adjusted in most text editors, individual developers can choose how much indentation they prefer to see, making the code more accessible and comfortable to read on a personal level. This adaptability can be particularly beneficial in teams with diverse preferences regarding code layout.
+研究アイデアの生成には、以下のような負担があります。
 
-Tabs also have the advantage of semantic meaning. A tab is explicitly meant to represent indentation, whereas a space is used for many purposes within code. This distinction can make automated parsing and manipulation of code simpler, as tools can more easily recognize and adjust indentation levels without confusing them with spaces used for alignment.
+- 既存研究の把握に時間がかかる
+- 論文の新規性が判断しづらい
+- アイデアの整理・構造化が難しい
 
-## Hybrid Approaches and Team Dynamics
+こうした課題を、LLM・論文 API・検索技術の組み合わせで自動化したい、という思いから開発をスタートしました。
 
-The debate often extends into discussions about hybrid approaches, where teams might use tabs for indentation and spaces for alignment within lines, attempting to combine the best of both worlds. However, such strategies require clear team agreements and disciplined adherence to coding standards to prevent formatting chaos.
+---
 
-Ultimately, the choice between spaces and tabs often comes down to team consensus and project guidelines. In environments where collaboration and code sharing are common, agreeing on a standard that everyone follows is more important than the individual preferences of spaces versus tabs. Modern development tools and linters can help enforce these standards, making the choice less about technical limitations and more about team dynamics and coding philosophy.
+## システム構成
 
-## Conclusion
+本ツールは、次の 3 つの AI エージェントで構成されたループシステムです。
 
-While the spaces vs. tabs debate might not have a one-size-fits-all answer, it underscores the importance of consistency, readability, and team collaboration in software development. Whether a team chooses spaces, tabs, or a hybrid approach, the key is to make a conscious choice that serves the project's needs and to adhere to it throughout the codebase. As with many aspects of coding, communication and agreement among team members are paramount to navigating this classic programming debate.
+### **1. Generator（発想エージェント）**
+
+テーマに対して初期アイデアを生成。
+
+### **2. Searcher（調査エージェント）**
+
+Semantic Scholar API を使って  
+関連研究の検索、要約、重要ポイントの抽出を担当。
+
+### **3. Reviewer（評価エージェント）**
+
+新規性・実現可能性・独創性を基準にアイデアを評価し、  
+改善提案をフィードバック。
+
+この 3 者が連携し、アイデアの質を段階的に高めていきます。
+
+---
+
+## 使っている技術
+
+- **Python / FastAPI**
+- **Semantic Scholar API**
+- **OpenAI GPT-4o / Gemini API**
+- **Pydantic によるスキーマ管理**
+- **マルチエージェント構造（Generator / Searcher / Reviewer）**
+
+技術面でも、「AI × 検索 × 自動化」の強みが伝わるよう構成しています。
+
+---
+
+## 出力されるもの
+
+- 研究テーマの背景整理
+- 既存研究の要点要約
+- 新規性の評価
+- 改善された研究アイデア（複数案）
+- 具体的な手法やアプローチ案
+
+研究だけでなく、新規事業の仮説検証や企画の下地としても利用できます。
+
+---
+
+## 今後の展望
+
+- 改善アイデアの“スコアリング”機能
+- 研究分野ごとのテンプレート最適化
+- UI/UX の Web アプリ化（Next.js × FastAPI）
+- ベクトル検索による論文検索の高度化
+
+AI 技術を活用した「知的生産性の引き上げ」をテーマに、  
+個人開発で継続的にアップデートしています。
