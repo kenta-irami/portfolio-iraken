@@ -3,7 +3,7 @@ import { BlogPosts } from 'app/components/posts'
 
 export default function Page() {
   return (
-    <section>
+    <section className="animate-fade-in-up">
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         小さな会社のための
         <br className="hidden sm:block" />

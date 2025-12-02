@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section>
+    <section className="animate-fade-in-up">
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">プロジェクト</h1>
       <BlogPosts />
     </section>

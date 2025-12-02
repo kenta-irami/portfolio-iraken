@@ -59,7 +59,7 @@ export default function Blog({ params }) {
   }
 
   return (
-    <section>
+    <section className="animate-fade-in-up">
       <script
         type="application/ld+json"
         suppressHydrationWarning

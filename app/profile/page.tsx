@@ -2,7 +2,7 @@ import { TechStack } from "app/components/tech-stack";
 
 export default function ProfilePage() {
   return (
-    <div className="mx-auto max-w-2xl">
+    <div className="mx-auto max-w-2xl animate-fade-in-up">
       <h1 className="text-2xl font-semibold mb-8 !mt-0">プロフィール</h1>
 
       <h2 className="text-xl font-semibold mb-4">
