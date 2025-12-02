@@ -12,7 +12,7 @@ export default function Page() {
 
       <p className="mb-4">
         Web制作・Web開発フリーランスの伊良皆 健太です。
-        LP / コーポレートサイト制作（ノーコード〜Next.js）を中心に、
+        LP / コーポレートサイト制作（Next.js）を中心に、
         問い合わせフォームの設置や、スプレッドシート連携・Slack通知などの
         「小さな仕組み化」までまとめてお手伝いしています。
       </p>

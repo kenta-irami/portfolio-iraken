@@ -6,7 +6,7 @@ export default function ProfilePage() {
       <h1 className="text-2xl font-semibold mb-8 !mt-0">プロフィール</h1>
 
       <h2 className="text-xl font-semibold mb-4">
-        伊良皆 健太（Kenta Iramina）
+        伊良皆 健太（Iramina Kenta）
       </h2>
       <p className="mb-4">
         Web制作・Web開発フリーランス。
@@ -16,7 +16,7 @@ export default function ProfilePage() {
 
       <h2 className="text-xl font-semibold mb-4 mt-8">提供していること</h2>
       <ul className="list-disc pl-6 mb-4">
-        <li>LP・コーポレートサイト制作（STUDIO / Next.js）</li>
+        <li>LP・コーポレートサイト制作（Next.js）</li>
         <li>問い合わせフォーム → スプレッドシート連携</li>
         <li>Slack通知や簡易ダッシュボードなどのミニ開発</li>
         <li>AIチャットボットや文章要約などの軽量AI導入</li>
@@ -25,14 +25,23 @@ export default function ProfilePage() {
       <h2 className="text-xl font-semibold mb-4 mt-8">技術スタック</h2>
       <TechStack />
 
-      <h2 className="text-xl font-semibold mb-4 mt-8">
-        ミッション / 大切にしていること
-      </h2>
-      <p className="mb-4">
-        「難しいものを、やさしくする」ことを大切にしています。
-        ITが苦手な方にも、できるだけ専門用語を使わず、 “無理のない仕組み化”
-        を一緒に作るスタイルです。
-      </p>
+      <div className="my-8 p-6 bg-neutral-50 dark:bg-neutral-900 rounded-2xl border border-neutral-100 dark:border-neutral-800">
+        <h2 className="text-lg font-bold text-neutral-900 dark:text-neutral-100 mb-4 flex items-center gap-2">
+          <span className="text-xl">🌱</span>
+          大切にしていること
+        </h2>
+
+        <p className="text-lg font-medium text-neutral-800 dark:text-neutral-200 mb-4 leading-relaxed">
+          ITを活用してルーティーン業務の負担を軽減し、<br className="hidden sm:block" />
+          <span className="text-blue-600 dark:text-blue-400">より大事なことに時間やエネルギーを注げるようになること</span>
+          を目指しています。
+        </p>
+
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
+          ITが苦手な方にも、できるだけ専門用語を使わず、<br className="hidden sm:block" />
+          現場に馴染む“無理のない仕組み化”を一緒に作るスタイルです。
+        </p>
+      </div>
 
       <h2 className="text-xl font-semibold mb-4 mt-8">お問い合わせ</h2>
       <p className="mb-4">
