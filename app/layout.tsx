@@ -12,15 +12,15 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "伊良皆 健太 | Web制作・Web開発フリーランス",
+    default: "伊良皆 健太 | フルスタックエンジニア",
     template: "%s | 伊良皆 健太",
   },
   description:
-    "小さな会社のための Web サイト制作と、問い合わせフォーム・スプレッドシート連携などのミニ自動化を行うフリーランスエンジニアのポートフォリオサイトです。",
+    "Next.js、TypeScript、クラウド技術を専門とするフリーランスエンジニアのポートフォリオ。モダンなWebアプリケーション開発、API連携、業務自動化システムの構築を行っています。",
   openGraph: {
-    title: "伊良皆 健太 | Web制作・Web開発フリーランス",
+    title: "伊良皆 健太 | フルスタックエンジニア",
     description:
-      "小さな会社のための Web サイト制作と、問い合わせフォーム・スプレッドシート連携などのミニ自動化を行うフリーランスエンジニアのポートフォリオサイトです。",
+      "Next.js、TypeScript、クラウド技術を専門とするフリーランスエンジニア。モダンなWebアプリケーション開発とシステム構築の実績を紹介するポートフォリオサイトです。",
     url: baseUrl,
     siteName: "伊良皆 健太 ポートフォリオ",
     locale: "ja_JP",

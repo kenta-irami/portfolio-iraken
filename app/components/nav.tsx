@@ -5,15 +5,15 @@ import { usePathname } from 'next/navigation'
 
 const navItems = {
   '/': {
-    name: 'ホーム',
+    name: 'Home',
   },
   '/projects': {
-    name: 'プロジェクト',
+    name: 'Works',
   },
   '/profile': {
-    name: 'プロフィール',
+    name: 'About',
   },
-  '/contact': { name: 'お問い合わせ' }
+  '/contact': { name: 'Contact' }
 }
 
 export function Navbar() {
@@ -34,8 +34,8 @@ export function Navbar() {
                   key={path}
                   href={path}
                   className={`transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-3 m-0 rounded-full ${isActive
-                      ? 'text-neutral-900 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 font-medium'
-                      : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800'
+                    ? 'text-neutral-900 dark:text-neutral-100 bg-neutral-100 dark:bg-neutral-800 font-medium'
+                    : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800'
                     }`}
                 >
                   {name}
