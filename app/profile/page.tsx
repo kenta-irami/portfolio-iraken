@@ -20,6 +20,7 @@ export default function ProfilePage() {
         <li>問い合わせフォーム → スプレッドシート連携</li>
         <li>Slack通知や簡易ダッシュボードなどのミニ開発</li>
         <li>AIチャットボットや文章要約などの軽量AI導入</li>
+        <li>そのほか、ご要望に応じて柔軟に対応いたします</li>
       </ul>
 
       <h2 className="text-xl font-semibold mb-4 mt-8">技術スタック</h2>
