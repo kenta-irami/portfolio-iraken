@@ -37,11 +37,13 @@ export default function ContactPage() {
               href="https://note.com/ira_ken"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-5 py-2.5 bg-[#41C9B4] text-white rounded-lg hover:bg-[#36a996] transition-colors font-medium"
+              className="inline-flex items-center px-5 py-2.5 bg-white text-neutral-800 rounded-lg hover:bg-neutral-50 transition-colors font-medium border-2 border-neutral-200 dark:bg-neutral-900 dark:text-neutral-200 dark:border-neutral-700 dark:hover:bg-neutral-800"
             >
-              <svg className="w-5 h-5 mr-2.5" fill="currentColor" viewBox="0 0 512 512" aria-hidden="true">
-                <path d="M192 96v320h-64V96h64zm192 0c35.3 0 64 28.7 64 64v192c0 35.3-28.7 64-64 64s-64-28.7-64-64V160c0-35.3 28.7-64 64-64zm0 64v192h-64V160h64z" />
-              </svg>
+              <img
+                src="/note-icon.jpg"
+                alt="Note"
+                className="w-5 h-5 mr-2.5 rounded"
+              />
               Note を見る
             </a>
           </div>
