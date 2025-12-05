@@ -44,7 +44,7 @@ export default function ContactPage() {
                 alt="Note"
                 className="w-5 h-5 mr-2.5 rounded"
               />
-              Note を見る
+              note を見る
             </a>
           </div>
         </div>
