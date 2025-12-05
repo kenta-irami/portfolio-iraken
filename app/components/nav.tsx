@@ -5,15 +5,15 @@ import { usePathname } from 'next/navigation'
 
 const navItems = {
   '/': {
-    name: 'Home',
+    name: 'ホーム',
   },
   '/projects': {
-    name: 'Works',
+    name: '実績',
   },
   '/profile': {
-    name: 'About',
+    name: 'プロフィール',
   },
-  '/contact': { name: 'Contact' }
+  '/contact': { name: 'お問い合わせ' }
 }
 
 export function Navbar() {

@@ -30,7 +30,7 @@ export default function ProfilePage() {
 
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <h3 className="font-semibold text-sm text-blue-600 dark:text-blue-400 mb-2">Frontend Development</h3>
+            <h3 className="font-semibold text-sm text-blue-600 dark:text-blue-400 mb-2">フロントエンド開発</h3>
             <ul className="text-sm space-y-1 text-neutral-700 dark:text-neutral-300">
               <li>• Next.js (App Router, Server Components)</li>
               <li>• React (Hooks, Context API)</li>
@@ -40,7 +40,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <h3 className="font-semibold text-sm text-green-600 dark:text-green-400 mb-2">Backend Development</h3>
+            <h3 className="font-semibold text-sm text-green-600 dark:text-green-400 mb-2">バックエンド開発</h3>
             <ul className="text-sm space-y-1 text-neutral-700 dark:text-neutral-300">
               <li>• Python (FastAPI, Pydantic)</li>
               <li>• Node.js, API Design</li>
@@ -50,7 +50,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <h3 className="font-semibold text-sm text-orange-600 dark:text-orange-400 mb-2">Cloud & Infrastructure</h3>
+            <h3 className="font-semibold text-sm text-orange-600 dark:text-orange-400 mb-2">クラウド・インフラ</h3>
             <ul className="text-sm space-y-1 text-neutral-700 dark:text-neutral-300">
               <li>• AWS (EC2, S3, Lambda)</li>
               <li>• GCP (Cloud Functions, BigQuery)</li>
@@ -59,7 +59,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <h3 className="font-semibold text-sm text-purple-600 dark:text-purple-400 mb-2">APIs & Integration</h3>
+            <h3 className="font-semibold text-sm text-purple-600 dark:text-purple-400 mb-2">API連携・ツール</h3>
             <ul className="text-sm space-y-1 text-neutral-700 dark:text-neutral-300">
               <li>• OpenAI API, Gemini API</li>
               <li>• Google APIs (Sheets, Gmail)</li>

@@ -24,7 +24,7 @@ export default function Page() {
 
       {/* About */}
       <div className="mb-12 p-6 bg-neutral-50 dark:bg-neutral-900 rounded-2xl border border-neutral-100 dark:border-neutral-800">
-        <h3 className="text-lg font-semibold mb-3">About</h3>
+        <h3 className="text-lg font-semibold mb-3">自己紹介</h3>
         <p className="mb-3 leading-relaxed">
           フリーランスのフルスタックエンジニアとして、
           Next.js・React・TypeScriptを中心としたモダンなWeb開発から、
@@ -44,22 +44,22 @@ export default function Page() {
 
       {/* Skills Highlight */}
       <div className="mb-12">
-        <h3 className="text-lg font-semibold mb-4">Tech Stack</h3>
+        <h3 className="text-lg font-semibold mb-4">技術スタック</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">Frontend</div>
+            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">フロントエンド</div>
             <div className="text-neutral-800 dark:text-neutral-200">Next.js, React, TypeScript, HTML/CSS</div>
           </div>
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">Backend</div>
+            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">バックエンド</div>
             <div className="text-neutral-800 dark:text-neutral-200">Python, FastAPI, Node.js, API Design</div>
           </div>
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">Cloud & DevOps</div>
+            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">クラウド・インフラ</div>
             <div className="text-neutral-800 dark:text-neutral-200">AWS, GCP, Vercel, Firebase</div>
           </div>
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">APIs & Integration</div>
+            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">API連携・ツール</div>
             <div className="text-neutral-800 dark:text-neutral-200">OpenAI, Google APIs, Slack, Notion</div>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Page() {
 
       {/* Projects Section */}
       <div className="my-8">
-        <h2 className="font-semibold text-xl mb-4 tracking-tight">Featured Works</h2>
+        <h2 className="font-semibold text-xl mb-4 tracking-tight">主な制作実績</h2>
         <BlogPosts />
         <Link
           href="/projects"
