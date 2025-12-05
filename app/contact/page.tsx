@@ -39,8 +39,8 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center px-5 py-2.5 bg-[#41C9B4] text-white rounded-lg hover:bg-[#36a996] transition-colors font-medium"
             >
-              <svg className="w-5 h-5 mr-2.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+              <svg className="w-5 h-5 mr-2.5" fill="currentColor" viewBox="0 0 512 512" aria-hidden="true">
+                <path d="M192 96v320h-64V96h64zm192 0c35.3 0 64 28.7 64 64v192c0 35.3-28.7 64-64 64s-64-28.7-64-64V160c0-35.3 28.7-64 64-64zm0 64v192h-64V160h64z" />
               </svg>
               Note を見る
             </a>
