@@ -1,15 +1,13 @@
 // app/page.tsx
-import { BlogPosts } from 'app/components/posts'
-import Link from 'next/link'
+import { BlogPosts } from "app/components/posts";
+import Link from "next/link";
 
 export default function Page() {
   return (
     <section className="animate-fade-in-up">
       {/* Hero Section */}
       <div className="mb-12">
-        <h1 className="mb-3 text-3xl font-bold tracking-tight">
-          伊良皆 健太
-        </h1>
+        <h1 className="mb-3 text-3xl font-bold tracking-tight">伊良皆 健太</h1>
         <h2 className="mb-6 text-xl text-neutral-600 dark:text-neutral-400 font-medium">
           フルスタックエンジニア
         </h2>
@@ -47,27 +45,45 @@ export default function Page() {
         <h3 className="text-lg font-semibold mb-4">技術スタック</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">フロントエンド</div>
-            <div className="text-neutral-800 dark:text-neutral-200">Next.js, React, TypeScript, HTML/CSS</div>
+            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">
+              フロントエンド
+            </div>
+            <div className="text-neutral-800 dark:text-neutral-200">
+              Next.js, React, TypeScript, HTML/CSS
+            </div>
           </div>
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">バックエンド</div>
-            <div className="text-neutral-800 dark:text-neutral-200">Python, FastAPI, Node.js, API Design</div>
+            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">
+              バックエンド
+            </div>
+            <div className="text-neutral-800 dark:text-neutral-200">
+              Python, FastAPI, Node.js, API Design
+            </div>
           </div>
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">クラウド・インフラ</div>
-            <div className="text-neutral-800 dark:text-neutral-200">AWS, GCP, Vercel, Firebase</div>
+            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">
+              クラウド・インフラ
+            </div>
+            <div className="text-neutral-800 dark:text-neutral-200">
+              AWS, GCP, Vercel, Firebase
+            </div>
           </div>
           <div className="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-lg border border-neutral-100 dark:border-neutral-800">
-            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">API連携・ツール</div>
-            <div className="text-neutral-800 dark:text-neutral-200">OpenAI, Google APIs, Slack, Notion</div>
+            <div className="text-sm font-medium text-neutral-500 dark:text-neutral-400 mb-2">
+              API連携・ツール
+            </div>
+            <div className="text-neutral-800 dark:text-neutral-200">
+              OpenAI, Google APIs, Slack, Notion
+            </div>
           </div>
         </div>
       </div>
 
       {/* Projects Section */}
       <div className="my-8">
-        <h2 className="font-semibold text-xl mb-4 tracking-tight">主な制作実績</h2>
+        <h2 className="font-semibold text-xl mb-4 tracking-tight">
+          主な制作事例
+        </h2>
         <BlogPosts />
         <Link
           href="/projects"
@@ -93,5 +109,5 @@ export default function Page() {
         </Link>
       </div>
     </section>
-  )
+  );
 }
