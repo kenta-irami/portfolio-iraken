@@ -18,7 +18,7 @@ export default function Page() {
           <br className="hidden sm:block" />
           モダンなWebアプリケーション開発を得意としています。
           <br />
-          スケーラブルなソリューションと優れたUXの提供を重視しています。
+          優れたUI/UXの提供を重視しています。
         </p>
       </div>
 

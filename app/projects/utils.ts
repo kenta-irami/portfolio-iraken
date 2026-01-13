@@ -52,7 +52,15 @@ function getMDXData(dir) {
 }
 
 export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), 'app', 'projects', 'posts'))
+  const postsDirectory = path.join(process.cwd(), 'app', 'projects', 'posts')
+  
+  // ディレクトリが存在するか確認
+  if (!fs.existsSync(postsDirectory)) {
+    console.error(`Posts directory not found: ${postsDirectory}`)
+    return []
+  }
+  
+  return getMDXData(postsDirectory)
 }
 
 export function formatDate(date: string, includeRelative = false) {
